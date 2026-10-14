@@ -1,4 +1,4 @@
-# Cryo Jobs 0.1 — Agent 无关的持久任务调度
+# Armchair 调度 MVP — cryo-jobs 0.1
 
 把长任务从主 Agent 会话中移出：主 Agent 串行理解上下文，独立任务并行执行，终态再写回 Cryochamber inbox。任意命令或 `run-agent.sh` 都可接入，不绑定 Codex、Claude 或模型 SDK。
 

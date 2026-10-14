@@ -1,5 +1,11 @@
+# Armchair
+
+Armchair is an agent-agnostic personal agent orchestration project, built on [Cryochamber](https://github.com/GiggleLiu/cryochamber). Its first scheduling MVP is [cryo-jobs](contrib/cryo-jobs/README.md), an independently installable runtime for durable parallel tasks, interruption, and restart recovery.
+
+The previous Armchair CLI/TUI project now lives in [armchair-legacy](https://github.com/Osgood001/armchair-legacy). The Cryochamber engine and its existing command names remain available as documented below.
+
 [![Crates.io](https://img.shields.io/crates/v/cryochamber)](https://crates.io/crates/cryochamber)
-[![CI](https://github.com/GiggleLiu/cryochamber/actions/workflows/ci.yml/badge.svg)](https://github.com/GiggleLiu/cryochamber/actions/workflows/ci.yml)
+[![CI](https://github.com/Osgood001/armchair/actions/workflows/ci.yml/badge.svg)](https://github.com/Osgood001/armchair/actions/workflows/ci.yml)
 [![Docs](https://img.shields.io/badge/docs-mdbook-blue)](https://giggleliu.github.io/cryochamber/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
