@@ -1,0 +1,7 @@
+{
+  "header": {"event_id": "replace-with-real-event-id"},
+  "event": {
+    "operator": {"open_id": "replace-with-owner-open-id"},
+    "action": {"value": {"action": "interrupt", "job_id": "replace-with-job-id"}}
+  }
+}

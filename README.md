@@ -56,6 +56,10 @@ logs, messages, TODOs, notes, and lifecycle controls.
 - **Configurable agents**: run OpenCode, Claude Code, Codex, or another command from `cryo.toml`.
 - **Local and remote monitoring**: use the Cryohub dashboard to monitor chamber status, logs, messages, TODOs, notes, and lifecycle controls in a local browser UI, or talk to a chamber from anywhere via Zulip with `cryo-zulip`. See [Monitor and message a chamber](https://giggleliu.github.io/cryochamber/how-to/monitor-chambers.html).
 
+## Experimental task scheduler
+
+[cryo-jobs](contrib/cryo-jobs/README.md) is an optional, agent-agnostic Python sidecar for durable parallel tasks, interruption, and restart recovery. It installs separately from the Rust binaries; see its validation record for platform coverage.
+
 ## License
 
 [MIT](LICENSE)

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "platform": "Linux-5.15.0-179-generic-x86_64-with-glibc2.35",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "attempt": 1,
+  "doctor": {
+    "python": "3.10.12",
+    "platform": "linux",
+    "command_found": true,
+    "sqlite": "ok",
+    "ps_found": true,
+    "feishu_cli_found": false,
+    "bohr_cli_found": true
+  },
+  "source_sha256": {
+    "cryo_jobs/__init__.py": "baa766cc213b005cde985961cf44e802b6821cca88f60282a32f22a05461d046",
+    "cryo_jobs/__main__.py": "4a25abdd81555f720e8af3b41ed8245087a28ebe10ebaade320a35c20ac4228f",
+    "cryo_jobs/runtime.py": "c7324d82b094f5fc6b90ca1387f911332ab2fa5dc732ba29395644b522631150",
+    "cryo_jobs/store.py": "ed01726e42224b6585d6a33894eca71de3cb6e0dc0e315ecb3228b1bd5aed556"
+  }
+}
