@@ -1,0 +1,27 @@
+test_adapter_stdin_and_literal_argument_no_shell (test_scheduler.SchedulerTests) ... ok
+test_archive_prevents_delivery_replay_after_write_crash (test_scheduler.SchedulerTests) ... ok
+test_callback_owner_validation_and_replay_after_resume (test_scheduler.SchedulerTests) ... ok
+test_cli_submitter_exit_does_not_kill_worker (test_scheduler.SchedulerTests) ... ok
+test_control_stream_recovers_from_invalid_events (test_scheduler.SchedulerTests) ... ok
+test_crash_between_claim_and_spawn_never_blindly_replays (test_scheduler.SchedulerTests) ... ok
+test_daemon_sigkill_adopts_guardian_no_replay_and_delivers (test_scheduler.SchedulerTests) ... ok
+test_explicit_checkpoint_resume_keeps_attempt_evidence (test_scheduler.SchedulerTests) ... ok
+test_failed_process_not_success (test_scheduler.SchedulerTests) ... ok
+test_guardian_loss_holds_capacity_and_never_replays (test_scheduler.SchedulerTests) ... ok
+test_installer_with_spaces_and_no_dependencies (test_scheduler.SchedulerTests) ... ok
+test_interrupt_without_daemon_kills_group_and_stays_cancelled (test_scheduler.SchedulerTests) ... interrupt including SIGKILL fallback: 0.412s
+ok
+test_low_disk_stops_new_claims (test_scheduler.SchedulerTests) ... ok
+test_missing_backend_reports_failure_with_evidence (test_scheduler.SchedulerTests) ... ok
+test_parallel_bounded_resource_and_idempotent_registration (test_scheduler.SchedulerTests) ... ok
+test_queued_cancel_never_starts (test_scheduler.SchedulerTests) ... ok
+test_restart_while_task_running_adopts_same_attempt (test_scheduler.SchedulerTests) ... ok
+test_service_templates (test_scheduler.SchedulerTests) ... ok
+test_stale_worker_cannot_overwrite_checkpoint (test_scheduler.SchedulerTests) ... ok
+test_timeout_is_terminal_and_no_automatic_retry (test_scheduler.SchedulerTests) ... ok
+test_token_addressed_daemon_stop_leaves_tasks_alive (test_scheduler.SchedulerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 14.453s
+
+OK

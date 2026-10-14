@@ -1,5 +1,11 @@
+# Armchair
+
+Armchair is an agent-agnostic personal agent orchestration project, built on [Cryochamber](https://github.com/GiggleLiu/cryochamber). Its first scheduling MVP is [cryo-jobs](contrib/cryo-jobs/README.md), an independently installable runtime for durable parallel tasks, interruption, and restart recovery.
+
+The previous Armchair CLI/TUI project now lives in [armchair-legacy](https://github.com/Osgood001/armchair-legacy). The Cryochamber engine and its existing command names remain available as documented below.
+
 [![Crates.io](https://img.shields.io/crates/v/cryochamber)](https://crates.io/crates/cryochamber)
-[![CI](https://github.com/GiggleLiu/cryochamber/actions/workflows/ci.yml/badge.svg)](https://github.com/GiggleLiu/cryochamber/actions/workflows/ci.yml)
+[![CI](https://github.com/Osgood001/armchair/actions/workflows/ci.yml/badge.svg)](https://github.com/Osgood001/armchair/actions/workflows/ci.yml)
 [![Docs](https://img.shields.io/badge/docs-mdbook-blue)](https://giggleliu.github.io/cryochamber/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -55,6 +61,10 @@ logs, messages, TODOs, notes, and lifecycle controls.
 - **Crash recovery and reboot persistence**: `cryo start` installs a launchd/systemd service by default, so scheduled sessions survive machine reboots; failed TODO sessions are rescheduled as visible retry attempts with backoff.
 - **Configurable agents**: run OpenCode, Claude Code, Codex, or another command from `cryo.toml`.
 - **Local and remote monitoring**: use the Cryohub dashboard to monitor chamber status, logs, messages, TODOs, notes, and lifecycle controls in a local browser UI, or talk to a chamber from anywhere via Zulip with `cryo-zulip`. See [Monitor and message a chamber](https://giggleliu.github.io/cryochamber/how-to/monitor-chambers.html).
+
+## Experimental task scheduler
+
+[cryo-jobs](contrib/cryo-jobs/README.md) is an optional, agent-agnostic Python sidecar for durable parallel tasks, interruption, and restart recovery. It installs separately from the Rust binaries; see its validation record for platform coverage.
 
 ## License
 

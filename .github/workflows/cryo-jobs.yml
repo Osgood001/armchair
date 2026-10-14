@@ -1,0 +1,35 @@
+name: Cryo Jobs
+
+on:
+  pull_request:
+    paths:
+      - 'contrib/cryo-jobs/**'
+      - '.github/workflows/cryo-jobs.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'contrib/cryo-jobs/**'
+      - '.github/workflows/cryo-jobs.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    defaults:
+      run:
+        working-directory: contrib/cryo-jobs
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Process and recovery tests
+        run: python -m unittest discover -s tests -v
+      - name: Standalone installation and adapter smoke test
+        run: python tests/acceptance.py "$RUNNER_TEMP/cryo-jobs-acceptance"
